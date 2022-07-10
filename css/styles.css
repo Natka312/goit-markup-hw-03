@@ -8,13 +8,28 @@
   --dark-bg-cl: #2f303a;
   --wight-bg-cl: #f5f4fa;
 }
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
 body {
   font-family: var(--main-font);
   color: var(--main-txt-cl);
 }
-
 .header {
   background-color: #ffffff;
+}
+.container{
+  margin-left: auto;
+    margin-right: auto;
+    width: 1600px;
+    height: 80px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 .logo {
   text-decoration: none;
@@ -25,12 +40,16 @@ body {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  width: 145px;
+  height: 31px;
+  margin: 24px 1240px 25px 215px;
 }
 .accent {
   color: #2196f3;
 }
 .header-list {
   list-style: none;
+  margin: 32px 853px 32px 453px;
 }
 .link {
   text-decoration: none;
@@ -90,6 +109,18 @@ body {
 }
 .main {
   background: #f5f4fa;
+}
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
 .advantage-list {
   list-style: none;
