@@ -19,17 +19,20 @@ html {
 body {
   font-family: var(--main-font);
   color: var(--main-txt-cl);
+  width: 1600px;
+  margin: auto;
 }
 .header {
+  display: flex;
   background-color: #ffffff;
+  height: 80px;
 }
 .container{
-  margin-left: auto;
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
     margin-right: auto;
-    width: 1600px;
-    height: 80px;
-    padding-left: 20px;
-    padding-right: 20px;
 }
 .logo {
   text-decoration: none;
@@ -40,14 +43,12 @@ body {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  width: 145px;
-  height: 31px;
-  margin: 24px 1240px 25px 215px;
 }
 .accent {
   color: #2196f3;
 }
 .header-list {
+  display: flex;
   list-style: none;
   margin: 32px 853px 32px 453px;
 }
@@ -58,6 +59,8 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  padding-left: 32px;
+  padding-right: 32px;
 }
 .link:hover {
   color: #2196f3;
@@ -65,7 +68,7 @@ body {
 .curren-link {
   color: #2196f3;
 }
-.contact-link {
+.contact-link { 
   text-decoration: none;
   color: #757575;
   font-style: normal;
@@ -81,7 +84,8 @@ body {
   color: #2196f3;
 }
 .hero {
-  background-color: #2f303a;
+   background-color: #2f303a;
+   text-align: center;
 }
 .hero-header {
   color: #ffffff;
@@ -92,6 +96,7 @@ body {
   text-transform: uppercase;
 }
 .hero-btn {
+  margin: 0 auto;
   cursor: pointer;
   background-color: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -108,6 +113,7 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 .main {
+  width: 1200px;
   background: #f5f4fa;
 }
 .visually-hidden {
@@ -123,6 +129,7 @@ body {
   margin: -1px;
 }
 .advantage-list {
+  display: flex;
   list-style: none;
 }
 .advantage-title {
@@ -148,6 +155,7 @@ body {
   color: #212121;
 }
 .work-list {
+  display: flex;
   list-style: none;
 }
 .team {
@@ -156,6 +164,7 @@ body {
 
 .team-list {
   list-style: none;
+  display: flex;
 }
 .team-title {
   font-weight: 500;
@@ -173,6 +182,7 @@ body {
   color: #757575;
 }
 .footer {
+  width: 1200px;
   background: #2f303a;
 }
 .logo-footer {
@@ -210,7 +220,11 @@ body {
   background: #f5f4fa;
 }
 .portfolio-list {
+  display: flex;
   list-style: none;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 .portfolio-link {
   text-decoration: none;
@@ -253,4 +267,11 @@ body {
 .portfolio-btn:focus,
 .portfolio-btn:active {
   background: #2196f3;
+}
+.conteiner-bg{
+  box-sizing: border-box;
+  width: calc((100%-60px) / 3);
+  margin-right: 30px;
+  margin-bottom: 30px;
+  margin-top: 0;
 }
