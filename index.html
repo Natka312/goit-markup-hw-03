@@ -9,8 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
@@ -18,10 +18,14 @@
     <header class="header">
       <!--header logo-->
       <div class="container header-container">
+        <div class="header-container">
+        <a class="logo" lang="en" href="./index.html"><span class="accent">Web</span>Studio</a>
+        </div>
+        <div class="header-container">  
         <nav class="header-nav">
-          <ul class="header-list">
-         <li><a class="logo" lang="en" href="./index.html"><span class="accent">Web</span>Studio</a></li>
-          <!--header section--> 
+                    <!--header section--> 
+        
+            <ul class="header-list">
             <li class="header-item">
               <a class="curren-link link" href="./index.html">Студия</a>
             </li>
@@ -33,11 +37,12 @@
             </li>
           </ul>
         </nav>
+        </div>
         <!--header contact-->
-      <ul class="list header-contact">
-       <li class="contact"><a href="mailto:info@devstudio.com" class="contact-link">info@devstudio.com</a></li> 
-       <li class="contact"><a href="tel:+380961111111" class="contact-link">+38 096 111 11 11</a></li>
-        </ul>
+       <div class="header-container">
+        <a href="mailto:info@devstudio.com" class="contact-link">info@devstudio.com</a> 
+       <a href="tel:+380961111111" class="contact-link">+38 096 111 11 11</a>
+       </div>
       </div>
     </header>
     <!--Main-content-->
