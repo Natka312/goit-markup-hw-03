@@ -59,7 +59,9 @@ p {
   background-color: #ffffff;
   padding-top: 24px;
   padding-bottom: 24px;
-  border: 1px solid var(--border-heder-c1);
+}
+.header-portfolio{
+  border-bottom: 1px solid var(--border-heder-c1);
 }
 .header-container {
   display: flex;
@@ -224,6 +226,9 @@ p {
   letter-spacing: 0.03em;
   color: #757575;
 }
+.work-section{
+  padding-bottom: 94px;
+}
 .work-title {
   margin-bottom: 50px;
   font-weight: 700;
@@ -236,7 +241,6 @@ p {
 .work-list {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 94px;
   list-style: none;
 }
 .team {
